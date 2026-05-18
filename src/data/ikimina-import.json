@@ -1,0 +1,4078 @@
+{
+  "cycle": {
+    "id": "cycle-2025-2026",
+    "name": "IKIMINA 2025-2026",
+    "currency": "EUR",
+    "startMonth": "2025-06-01",
+    "endMonth": "2026-08-01",
+    "defaults": {
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500
+    }
+  },
+  "members": [
+    {
+      "id": "member-akayezu-arsene-bienvenu",
+      "name": "AKAYEZU ARSENE BIENVENU",
+      "successionOrder": 6,
+      "status": "active"
+    },
+    {
+      "id": "member-ibambasi-antoine",
+      "name": "IBAMBASI ANTOINE",
+      "successionOrder": 7,
+      "status": "active"
+    },
+    {
+      "id": "member-kankindi-marie-claire",
+      "name": "KANKINDI MARIE-CLAIRE",
+      "successionOrder": 10,
+      "status": "active"
+    },
+    {
+      "id": "member-mbarushimana-bonaventure",
+      "name": "MBARUSHIMANA BONAVENTURE",
+      "successionOrder": 9,
+      "status": "active"
+    },
+    {
+      "id": "member-mukakabare-patricia",
+      "name": "MUKAKABARE  PATRICIA",
+      "successionOrder": 11,
+      "status": "active"
+    },
+    {
+      "id": "member-niwemwana-marie",
+      "name": "NIWEMWANA MARIE",
+      "successionOrder": 2,
+      "status": "active"
+    },
+    {
+      "id": "member-ntacyobitwaye-francoise",
+      "name": "NTACYOBITWAYE FRANCOISE",
+      "successionOrder": 1,
+      "status": "active"
+    },
+    {
+      "id": "member-ntamagezo-felicien",
+      "name": "NTAMAGEZO FELICIEN",
+      "successionOrder": 12,
+      "status": "active"
+    },
+    {
+      "id": "member-nyamvura-perpetue",
+      "name": "NYAMVURA PERPETUE",
+      "successionOrder": 5,
+      "status": "active"
+    },
+    {
+      "id": "member-ryumugabe-jean-baptiste",
+      "name": "RYUMUGABE JEAN-BAPTISTE",
+      "successionOrder": 13,
+      "status": "active"
+    },
+    {
+      "id": "member-uwajeneza-marie-hilaire",
+      "name": "UWAJENEZA MARIE HILAIRE",
+      "successionOrder": 4,
+      "status": "active"
+    },
+    {
+      "id": "member-uwamahoro-jeanne-marie",
+      "name": "UWAMAHORO JEANNE-MARIE",
+      "successionOrder": 8,
+      "status": "active"
+    },
+    {
+      "id": "member-uwayezu-dativa",
+      "name": "UWAYEZU DATIVA",
+      "successionOrder": 3,
+      "status": "active"
+    },
+    {
+      "id": "member-uwimana-alphonsine",
+      "name": "UWIMANA ALPHONSINE",
+      "successionOrder": 14,
+      "status": "active"
+    },
+    {
+      "id": "member-gakwaya-emmanuel",
+      "name": "GAKWAYA EMMANUEL",
+      "successionOrder": 15,
+      "status": "active"
+    }
+  ],
+  "periods": [
+    {
+      "id": "period-2025-06",
+      "cycleId": "cycle-2025-2026",
+      "label": "JUIN 2025",
+      "month": "2025-06-01",
+      "status": "closed",
+      "closedAt": "2025-06-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-07",
+      "cycleId": "cycle-2025-2026",
+      "label": "JUILLET 2025",
+      "month": "2025-07-01",
+      "status": "closed",
+      "closedAt": "2025-07-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-08",
+      "cycleId": "cycle-2025-2026",
+      "label": "AOUT 2025",
+      "month": "2025-08-01",
+      "status": "closed",
+      "closedAt": "2025-08-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-09",
+      "cycleId": "cycle-2025-2026",
+      "label": "SEPTEMBRE 2025",
+      "month": "2025-09-01",
+      "status": "closed",
+      "closedAt": "2025-09-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-10",
+      "cycleId": "cycle-2025-2026",
+      "label": "OCTOBRE 2025",
+      "month": "2025-10-01",
+      "status": "closed",
+      "closedAt": "2025-10-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-11",
+      "cycleId": "cycle-2025-2026",
+      "label": "NOVEMBRE 2025",
+      "month": "2025-11-01",
+      "status": "closed",
+      "closedAt": "2025-11-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2025-12",
+      "cycleId": "cycle-2025-2026",
+      "label": "DECEMBRE 2025",
+      "month": "2025-12-01",
+      "status": "closed",
+      "closedAt": "2025-12-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2026-01",
+      "cycleId": "cycle-2025-2026",
+      "label": "JANVIER 2026",
+      "month": "2026-01-01",
+      "status": "closed",
+      "closedAt": "2026-01-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2026-02",
+      "cycleId": "cycle-2025-2026",
+      "label": "FEVRIER 2026",
+      "month": "2026-02-01",
+      "status": "closed",
+      "closedAt": "2026-02-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2026-03",
+      "cycleId": "cycle-2025-2026",
+      "label": "MARS 2026",
+      "month": "2026-03-01",
+      "status": "closed",
+      "closedAt": "2026-03-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2026-04",
+      "cycleId": "cycle-2025-2026",
+      "label": "AVRIL 2026",
+      "month": "2026-04-01",
+      "status": "closed",
+      "closedAt": "2026-04-01T18:00:00.000Z"
+    },
+    {
+      "id": "period-2026-05",
+      "cycleId": "cycle-2025-2026",
+      "label": "MAI 2026",
+      "month": "2026-05-01",
+      "status": "draft"
+    },
+    {
+      "id": "period-2026-06",
+      "cycleId": "cycle-2025-2026",
+      "label": "JUIN 2026",
+      "month": "2026-06-01",
+      "status": "draft"
+    },
+    {
+      "id": "period-2026-07",
+      "cycleId": "cycle-2025-2026",
+      "label": "JUILLET 2026",
+      "month": "2026-07-01",
+      "status": "draft"
+    },
+    {
+      "id": "period-2026-08",
+      "cycleId": "cycle-2025-2026",
+      "label": "AOUT 2026",
+      "month": "2026-08-01",
+      "status": "draft"
+    }
+  ],
+  "openingBalances": [
+    {
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "creditCents": 135000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-ibambasi-antoine",
+      "creditCents": 420000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-kankindi-marie-claire",
+      "creditCents": 575000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-mbarushimana-bonaventure",
+      "creditCents": 190000,
+      "travelSavingCents": 10853
+    },
+    {
+      "memberId": "member-mukakabare-patricia",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-niwemwana-marie",
+      "creditCents": 90000,
+      "travelSavingCents": 22500
+    },
+    {
+      "memberId": "member-ntacyobitwaye-francoise",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-ntamagezo-felicien",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-nyamvura-perpetue",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "creditCents": 90000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "creditCents": 335000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-uwayezu-dativa",
+      "creditCents": 215000,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-uwimana-alphonsine",
+      "creditCents": 0,
+      "travelSavingCents": 0
+    },
+    {
+      "memberId": "member-gakwaya-emmanuel",
+      "creditCents": 440897,
+      "travelSavingCents": 0
+    }
+  ],
+  "monthlyEntries": [
+    {
+      "id": "entry-period-2025-06-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-06",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-ibambasi-antoine",
+      "periodId": "period-2025-06",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-kankindi-marie-claire",
+      "periodId": "period-2025-06",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-06",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-mukakabare-patricia",
+      "periodId": "period-2025-06",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-niwemwana-marie",
+      "periodId": "period-2025-06",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-06",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-ntamagezo-felicien",
+      "periodId": "period-2025-06",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 612500,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-nyamvura-perpetue",
+      "periodId": "period-2025-06",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-06",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-06",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-06",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 100000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-uwayezu-dativa",
+      "periodId": "period-2025-06",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 15000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-uwimana-alphonsine",
+      "periodId": "period-2025-06",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-06-member-gakwaya-emmanuel",
+      "periodId": "period-2025-06",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 2500,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-07",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 60000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-ibambasi-antoine",
+      "periodId": "period-2025-07",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-kankindi-marie-claire",
+      "periodId": "period-2025-07",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-07",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-mukakabare-patricia",
+      "periodId": "period-2025-07",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-niwemwana-marie",
+      "periodId": "period-2025-07",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-07",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-ntamagezo-felicien",
+      "periodId": "period-2025-07",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 52500,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-nyamvura-perpetue",
+      "periodId": "period-2025-07",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-07",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-07",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-07",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-uwayezu-dativa",
+      "periodId": "period-2025-07",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-uwimana-alphonsine",
+      "periodId": "period-2025-07",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-07-member-gakwaya-emmanuel",
+      "periodId": "period-2025-07",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-08",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 250000,
+      "repaymentCents": 55000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-ibambasi-antoine",
+      "periodId": "period-2025-08",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-kankindi-marie-claire",
+      "periodId": "period-2025-08",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 5000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-08",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-mukakabare-patricia",
+      "periodId": "period-2025-08",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-niwemwana-marie",
+      "periodId": "period-2025-08",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-08",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-ntamagezo-felicien",
+      "periodId": "period-2025-08",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-nyamvura-perpetue",
+      "periodId": "period-2025-08",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-08",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-08",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-08",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-uwayezu-dativa",
+      "periodId": "period-2025-08",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 70000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-uwimana-alphonsine",
+      "periodId": "period-2025-08",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-08-member-gakwaya-emmanuel",
+      "periodId": "period-2025-08",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-09",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-ibambasi-antoine",
+      "periodId": "period-2025-09",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-kankindi-marie-claire",
+      "periodId": "period-2025-09",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-09",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-mukakabare-patricia",
+      "periodId": "period-2025-09",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 600000,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-niwemwana-marie",
+      "periodId": "period-2025-09",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-09",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-ntamagezo-felicien",
+      "periodId": "period-2025-09",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-nyamvura-perpetue",
+      "periodId": "period-2025-09",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-09",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-09",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-09",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-uwayezu-dativa",
+      "periodId": "period-2025-09",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-uwimana-alphonsine",
+      "periodId": "period-2025-09",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-09-member-gakwaya-emmanuel",
+      "periodId": "period-2025-09",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-10",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-ibambasi-antoine",
+      "periodId": "period-2025-10",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-kankindi-marie-claire",
+      "periodId": "period-2025-10",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-10",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 100000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-mukakabare-patricia",
+      "periodId": "period-2025-10",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-niwemwana-marie",
+      "periodId": "period-2025-10",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-10",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-ntamagezo-felicien",
+      "periodId": "period-2025-10",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 50000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-nyamvura-perpetue",
+      "periodId": "period-2025-10",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-10",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-10",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 15000,
+      "repaymentCents": 15000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-10",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-uwayezu-dativa",
+      "periodId": "period-2025-10",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-uwimana-alphonsine",
+      "periodId": "period-2025-10",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-10-member-gakwaya-emmanuel",
+      "periodId": "period-2025-10",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-11",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-ibambasi-antoine",
+      "periodId": "period-2025-11",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-kankindi-marie-claire",
+      "periodId": "period-2025-11",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-11",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-mukakabare-patricia",
+      "periodId": "period-2025-11",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-niwemwana-marie",
+      "periodId": "period-2025-11",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-11",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-ntamagezo-felicien",
+      "periodId": "period-2025-11",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 12500,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-nyamvura-perpetue",
+      "periodId": "period-2025-11",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-11",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-11",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-11",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-uwayezu-dativa",
+      "periodId": "period-2025-11",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-uwimana-alphonsine",
+      "periodId": "period-2025-11",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-11-member-gakwaya-emmanuel",
+      "periodId": "period-2025-11",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2025-12",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-ibambasi-antoine",
+      "periodId": "period-2025-12",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-kankindi-marie-claire",
+      "periodId": "period-2025-12",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-mbarushimana-bonaventure",
+      "periodId": "period-2025-12",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-mukakabare-patricia",
+      "periodId": "period-2025-12",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-niwemwana-marie",
+      "periodId": "period-2025-12",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-ntacyobitwaye-francoise",
+      "periodId": "period-2025-12",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-ntamagezo-felicien",
+      "periodId": "period-2025-12",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 12500,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-nyamvura-perpetue",
+      "periodId": "period-2025-12",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2025-12",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2025-12",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2025-12",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-uwayezu-dativa",
+      "periodId": "period-2025-12",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-uwimana-alphonsine",
+      "periodId": "period-2025-12",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2025-12-member-gakwaya-emmanuel",
+      "periodId": "period-2025-12",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-01",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-ibambasi-antoine",
+      "periodId": "period-2026-01",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-kankindi-marie-claire",
+      "periodId": "period-2026-01",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-01",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-mukakabare-patricia",
+      "periodId": "period-2026-01",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-niwemwana-marie",
+      "periodId": "period-2026-01",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-01",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-ntamagezo-felicien",
+      "periodId": "period-2026-01",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 80000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-nyamvura-perpetue",
+      "periodId": "period-2026-01",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-01",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-01",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-01",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-uwayezu-dativa",
+      "periodId": "period-2026-01",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-uwimana-alphonsine",
+      "periodId": "period-2026-01",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-01-member-gakwaya-emmanuel",
+      "periodId": "period-2026-01",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-02",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 40000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-ibambasi-antoine",
+      "periodId": "period-2026-02",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-kankindi-marie-claire",
+      "periodId": "period-2026-02",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-02",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-mukakabare-patricia",
+      "periodId": "period-2026-02",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 25000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-niwemwana-marie",
+      "periodId": "period-2026-02",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 300000,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-02",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-ntamagezo-felicien",
+      "periodId": "period-2026-02",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 12500,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-nyamvura-perpetue",
+      "periodId": "period-2026-02",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-02",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-02",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-02",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 15000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-uwayezu-dativa",
+      "periodId": "period-2026-02",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-uwimana-alphonsine",
+      "periodId": "period-2026-02",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-02-member-gakwaya-emmanuel",
+      "periodId": "period-2026-02",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 100000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-03",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 10000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-ibambasi-antoine",
+      "periodId": "period-2026-03",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-kankindi-marie-claire",
+      "periodId": "period-2026-03",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 130000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-03",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 50000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-mukakabare-patricia",
+      "periodId": "period-2026-03",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 50000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-niwemwana-marie",
+      "periodId": "period-2026-03",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-03",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 300000,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-ntamagezo-felicien",
+      "periodId": "period-2026-03",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 200000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-nyamvura-perpetue",
+      "periodId": "period-2026-03",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-03",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-03",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 200000,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-03",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 15000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-uwayezu-dativa",
+      "periodId": "period-2026-03",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-uwimana-alphonsine",
+      "periodId": "period-2026-03",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-03-member-gakwaya-emmanuel",
+      "periodId": "period-2026-03",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-04",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-ibambasi-antoine",
+      "periodId": "period-2026-04",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-kankindi-marie-claire",
+      "periodId": "period-2026-04",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-04",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-mukakabare-patricia",
+      "periodId": "period-2026-04",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 0,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 60000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-niwemwana-marie",
+      "periodId": "period-2026-04",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 15000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-04",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 17000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-ntamagezo-felicien",
+      "periodId": "period-2026-04",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 30000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-nyamvura-perpetue",
+      "periodId": "period-2026-04",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-04",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 600000,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-04",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-04",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 20000,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-uwayezu-dativa",
+      "periodId": "period-2026-04",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-uwimana-alphonsine",
+      "periodId": "period-2026-04",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-04-member-gakwaya-emmanuel",
+      "periodId": "period-2026-04",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 10000,
+      "savingCents": 2000,
+      "mutualInsuranceCents": 500,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-05",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-ibambasi-antoine",
+      "periodId": "period-2026-05",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-kankindi-marie-claire",
+      "periodId": "period-2026-05",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-05",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-mukakabare-patricia",
+      "periodId": "period-2026-05",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-niwemwana-marie",
+      "periodId": "period-2026-05",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-05",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-ntamagezo-felicien",
+      "periodId": "period-2026-05",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-nyamvura-perpetue",
+      "periodId": "period-2026-05",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-05",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-05",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-05",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-uwayezu-dativa",
+      "periodId": "period-2026-05",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-uwimana-alphonsine",
+      "periodId": "period-2026-05",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-05-member-gakwaya-emmanuel",
+      "periodId": "period-2026-05",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-06",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-ibambasi-antoine",
+      "periodId": "period-2026-06",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-kankindi-marie-claire",
+      "periodId": "period-2026-06",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-06",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-mukakabare-patricia",
+      "periodId": "period-2026-06",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-niwemwana-marie",
+      "periodId": "period-2026-06",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-06",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-ntamagezo-felicien",
+      "periodId": "period-2026-06",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-nyamvura-perpetue",
+      "periodId": "period-2026-06",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-06",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-06",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-06",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-uwayezu-dativa",
+      "periodId": "period-2026-06",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-uwimana-alphonsine",
+      "periodId": "period-2026-06",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-06-member-gakwaya-emmanuel",
+      "periodId": "period-2026-06",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-07",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-ibambasi-antoine",
+      "periodId": "period-2026-07",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-kankindi-marie-claire",
+      "periodId": "period-2026-07",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-07",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-mukakabare-patricia",
+      "periodId": "period-2026-07",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-niwemwana-marie",
+      "periodId": "period-2026-07",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-07",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-ntamagezo-felicien",
+      "periodId": "period-2026-07",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-nyamvura-perpetue",
+      "periodId": "period-2026-07",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-07",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-07",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-07",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-uwayezu-dativa",
+      "periodId": "period-2026-07",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-uwimana-alphonsine",
+      "periodId": "period-2026-07",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-07-member-gakwaya-emmanuel",
+      "periodId": "period-2026-07",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-akayezu-arsene-bienvenu",
+      "periodId": "period-2026-08",
+      "memberId": "member-akayezu-arsene-bienvenu",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-ibambasi-antoine",
+      "periodId": "period-2026-08",
+      "memberId": "member-ibambasi-antoine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-kankindi-marie-claire",
+      "periodId": "period-2026-08",
+      "memberId": "member-kankindi-marie-claire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-mbarushimana-bonaventure",
+      "periodId": "period-2026-08",
+      "memberId": "member-mbarushimana-bonaventure",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-mukakabare-patricia",
+      "periodId": "period-2026-08",
+      "memberId": "member-mukakabare-patricia",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-niwemwana-marie",
+      "periodId": "period-2026-08",
+      "memberId": "member-niwemwana-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-ntacyobitwaye-francoise",
+      "periodId": "period-2026-08",
+      "memberId": "member-ntacyobitwaye-francoise",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-ntamagezo-felicien",
+      "periodId": "period-2026-08",
+      "memberId": "member-ntamagezo-felicien",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-nyamvura-perpetue",
+      "periodId": "period-2026-08",
+      "memberId": "member-nyamvura-perpetue",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-ryumugabe-jean-baptiste",
+      "periodId": "period-2026-08",
+      "memberId": "member-ryumugabe-jean-baptiste",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-uwajeneza-marie-hilaire",
+      "periodId": "period-2026-08",
+      "memberId": "member-uwajeneza-marie-hilaire",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-uwamahoro-jeanne-marie",
+      "periodId": "period-2026-08",
+      "memberId": "member-uwamahoro-jeanne-marie",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-uwayezu-dativa",
+      "periodId": "period-2026-08",
+      "memberId": "member-uwayezu-dativa",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-uwimana-alphonsine",
+      "periodId": "period-2026-08",
+      "memberId": "member-uwimana-alphonsine",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    },
+    {
+      "id": "entry-period-2026-08-member-gakwaya-emmanuel",
+      "periodId": "period-2026-08",
+      "memberId": "member-gakwaya-emmanuel",
+      "contributionCents": 0,
+      "savingCents": 0,
+      "mutualInsuranceCents": 0,
+      "loanCents": 0,
+      "repaymentCents": 0,
+      "travelCents": 0,
+      "notes": ""
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "audit-import-2025-2026",
+      "actor": "system",
+      "action": "import_excel",
+      "entityType": "cycle",
+      "entityId": "cycle-2025-2026",
+      "after": {
+        "members": 15,
+        "periods": 15,
+        "monthlyEntries": 225
+      },
+      "createdAt": "2026-05-18T11:32:27.462Z"
+    }
+  ],
+  "exports": [],
+  "importReport": {
+    "sourceWorkbook": "C:\\Users\\Antoine Ibambasi\\OneDrive\\Favoris partagés\\Documents\\IKIMINA\\2025\\IKIMINA 2025_2026REV1.xlsx",
+    "generatedAt": "2026-05-18T11:32:27.463Z",
+    "ignoredFormulaErrors": 180,
+    "warnings": [
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2025",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2025",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "OCTOBRE 2025",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "NOVEMBRE 2025",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "DECEMBRE 2025",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JANVIER 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "FEVRIER 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MARS 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AVRIL 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "MAI 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUIN 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "JUILLET 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J5",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J6",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J7",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J8",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J9",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J10",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J11",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J12",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J13",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J14",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J15",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J16",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J17",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J18",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      },
+      {
+        "sheet": "AOUT 2026",
+        "cell": "J19",
+        "message": "Formule #REF! ignoree; la valeur visible est importee si disponible."
+      }
+    ],
+    "periodTotals": [
+      {
+        "periodId": "period-2025-06",
+        "label": "JUIN 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 612500,
+        "repaymentCents": 217500,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-07",
+        "label": "JUILLET 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 0,
+        "repaymentCents": 197500,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-08",
+        "label": "AOUT 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 250000,
+        "repaymentCents": 240000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-09",
+        "label": "SEPTEMBRE 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 600000,
+        "repaymentCents": 195000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-10",
+        "label": "OCTOBRE 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 15000,
+        "repaymentCents": 315000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-11",
+        "label": "NOVEMBRE 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 12500,
+        "repaymentCents": 85000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2025-12",
+        "label": "DECEMBRE 2025",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 0,
+        "repaymentCents": 137500,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-01",
+        "label": "JANVIER 2026",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 0,
+        "repaymentCents": 200000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-02",
+        "label": "FEVRIER 2026",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 312500,
+        "repaymentCents": 240000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-03",
+        "label": "MARS 2026",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 500000,
+        "repaymentCents": 525000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-04",
+        "label": "AVRIL 2026",
+        "contributionCents": 140000,
+        "savingCents": 30000,
+        "mutualInsuranceCents": 7500,
+        "loanCents": 600000,
+        "repaymentCents": 162000,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-05",
+        "label": "MAI 2026",
+        "contributionCents": 0,
+        "savingCents": 0,
+        "mutualInsuranceCents": 0,
+        "loanCents": 0,
+        "repaymentCents": 0,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-06",
+        "label": "JUIN 2026",
+        "contributionCents": 0,
+        "savingCents": 0,
+        "mutualInsuranceCents": 0,
+        "loanCents": 0,
+        "repaymentCents": 0,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-07",
+        "label": "JUILLET 2026",
+        "contributionCents": 0,
+        "savingCents": 0,
+        "mutualInsuranceCents": 0,
+        "loanCents": 0,
+        "repaymentCents": 0,
+        "travelCents": 0
+      },
+      {
+        "periodId": "period-2026-08",
+        "label": "AOUT 2026",
+        "contributionCents": 0,
+        "savingCents": 0,
+        "mutualInsuranceCents": 0,
+        "loanCents": 0,
+        "repaymentCents": 0,
+        "travelCents": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "IKIMINA",
+  "short_name": "IKIMINA",
+  "description": "Gestion privee de tontine",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#1f2320"
+}
