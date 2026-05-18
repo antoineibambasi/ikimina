@@ -80,11 +80,19 @@ L'import reconstruit les donnees depuis les valeurs visibles de l'Excel:
 
 Les formules `#REF!` sont journalisees mais non recopiees.
 
+## Vues operationnelles
+
+- `Membre 360`: historique complet par participant, avec cotisations, paiements aux fonds collectifs, credits et voyage.
+- `Mois 360`: controle d'un mois, statuts par membre, totaux et ecarts collectifs.
+- `Cotisations`: matrice de controle avec filtres par membre, mois, statut et tri par priorite.
+- `Fonds collectifs`: pilotage collectif de l'epargne mensuelle et de l'assurance mutuelle, avec attendu, encaisse, ecart et triage.
+
 ## Regles metier
 
 - Tous les montants sont stockes en centimes.
 - Encours credit = solde initial + prets - remboursements.
 - Epargne voyage = solde initial + mouvements voyage.
+- Epargne mensuelle et assurance mutuelle sont des fonds collectifs; les lignes membre servent a verifier les paiements attendus.
 - Un mois cloture est verrouille.
 - Les corrections futures doivent passer par un ajustement audite.
 

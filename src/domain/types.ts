@@ -4,6 +4,8 @@ export type PeriodStatus = 'draft' | 'closed'
 
 export type AppRole = 'admin' | 'participant'
 
+export type ContributionStatus = 'complete' | 'partial' | 'missing' | 'draft'
+
 export type MoneyCents = number
 
 export interface CycleDefaults {
@@ -122,4 +124,80 @@ export interface MemberLedger {
   contributionCents: MoneyCents
   savingCents: MoneyCents
   mutualInsuranceCents: MoneyCents
+}
+
+export interface MemberTimelineRow {
+  period: Period
+  entry?: MonthlyEntry
+  contributionStatus: ContributionStatus
+  contributionCents: MoneyCents
+  savingCents: MoneyCents
+  mutualInsuranceCents: MoneyCents
+  loanCents: MoneyCents
+  repaymentCents: MoneyCents
+  travelCents: MoneyCents
+  creditBalanceCents: MoneyCents
+  travelBalanceCents: MoneyCents
+}
+
+export interface PeriodMemberDetail {
+  member: Member
+  entry?: MonthlyEntry
+  contributionStatus: ContributionStatus
+  contributionCents: MoneyCents
+  savingCents: MoneyCents
+  mutualInsuranceCents: MoneyCents
+  loanCents: MoneyCents
+  repaymentCents: MoneyCents
+  travelCents: MoneyCents
+  creditBalanceCents: MoneyCents
+  travelBalanceCents: MoneyCents
+}
+
+export interface PeriodDetail {
+  period: Period
+  rows: PeriodMemberDetail[]
+}
+
+export interface ContributionMatrixCell {
+  period: Period
+  entry?: MonthlyEntry
+  status: ContributionStatus
+  contributionCents: MoneyCents
+  savingCents: MoneyCents
+  mutualInsuranceCents: MoneyCents
+}
+
+export interface ContributionMatrixRow {
+  member: Member
+  cells: ContributionMatrixCell[]
+  contributionTotalCents: MoneyCents
+  savingTotalCents: MoneyCents
+  mutualInsuranceTotalCents: MoneyCents
+}
+
+export interface CollectiveFundPeriodRow {
+  period: Period
+  activeMembers: number
+  expectedSavingCents: MoneyCents
+  paidSavingCents: MoneyCents
+  savingGapCents: MoneyCents
+  savingStatus: ContributionStatus
+  expectedMutualInsuranceCents: MoneyCents
+  paidMutualInsuranceCents: MoneyCents
+  mutualInsuranceGapCents: MoneyCents
+  mutualInsuranceStatus: ContributionStatus
+  status: ContributionStatus
+  priority: number
+}
+
+export interface CollectiveFundSummary {
+  expectedSavingCents: MoneyCents
+  paidSavingCents: MoneyCents
+  savingGapCents: MoneyCents
+  expectedMutualInsuranceCents: MoneyCents
+  paidMutualInsuranceCents: MoneyCents
+  mutualInsuranceGapCents: MoneyCents
+  periodsWithAttention: number
+  draftPeriods: number
 }

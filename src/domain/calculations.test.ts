@@ -3,6 +3,12 @@ import {
   calculateDashboardTotals,
   calculateMemberLedger,
   calculatePeriodTotals,
+  getCollectiveFundRows,
+  getCollectiveFundSummary,
+  getContributionMatrix,
+  getEntryStatus,
+  getMemberTimeline,
+  getPeriodDetail,
 } from './calculations'
 import type { IkiminaDataset, Member, MonthlyEntry, OpeningBalance, Period } from './types'
 
@@ -63,6 +69,37 @@ const entries: MonthlyEntry[] = [
   },
 ]
 
+function datasetFixture(overrides: Partial<IkiminaDataset> = {}): IkiminaDataset {
+  return {
+    cycle: {
+      id: 'cycle-1',
+      name: 'IKIMINA 2025-2026',
+      currency: 'EUR',
+      startMonth: '2025-06-01',
+      endMonth: '2026-08-01',
+      defaults: {
+        contributionCents: 100_00,
+        savingCents: 20_00,
+        mutualInsuranceCents: 5_00,
+      },
+    },
+    members: [member],
+    periods,
+    openingBalances,
+    monthlyEntries: entries,
+    auditEvents: [],
+    exports: [],
+    importReport: {
+      sourceWorkbook: 'test.xlsx',
+      generatedAt: '2026-05-18T00:00:00.000Z',
+      ignoredFormulaErrors: 0,
+      warnings: [],
+      periodTotals: [],
+    },
+    ...overrides,
+  }
+}
+
 describe('IKIMINA financial calculations', () => {
   it('sums period entries in cents', () => {
     expect(calculatePeriodTotals(entries)).toEqual({
@@ -85,33 +122,7 @@ describe('IKIMINA financial calculations', () => {
   })
 
   it('calculates dashboard totals for the active period', () => {
-    const dataset: IkiminaDataset = {
-      cycle: {
-        id: 'cycle-1',
-        name: 'IKIMINA 2025-2026',
-        currency: 'EUR',
-        startMonth: '2025-06-01',
-        endMonth: '2026-08-01',
-        defaults: {
-          contributionCents: 100_00,
-          savingCents: 20_00,
-          mutualInsuranceCents: 5_00,
-        },
-      },
-      members: [member],
-      periods,
-      openingBalances,
-      monthlyEntries: entries,
-      auditEvents: [],
-      exports: [],
-      importReport: {
-        sourceWorkbook: 'test.xlsx',
-        generatedAt: '2026-05-18T00:00:00.000Z',
-        ignoredFormulaErrors: 0,
-        warnings: [],
-        periodTotals: [],
-      },
-    }
+    const dataset = datasetFixture()
 
     expect(calculateDashboardTotals(dataset, 'period-2')).toMatchObject({
       contributionCents: 100_00,
@@ -121,6 +132,117 @@ describe('IKIMINA financial calculations', () => {
       activeMembers: 1,
       draftPeriods: 1,
       closedPeriods: 1,
+    })
+  })
+
+  it('treats monthly saving and mutual insurance as required flows', () => {
+    const dataset = datasetFixture()
+
+    expect(getEntryStatus(entries[0], dataset.cycle.defaults, 'closed')).toBe('complete')
+    expect(
+      getEntryStatus(
+        {
+          ...entries[0],
+          contributionCents: 0,
+          savingCents: 20_00,
+          mutualInsuranceCents: 5_00,
+        },
+        dataset.cycle.defaults,
+        'closed',
+      ),
+    ).toBe('complete')
+    expect(
+      getEntryStatus({ ...entries[0], savingCents: 0 }, dataset.cycle.defaults, 'closed'),
+    ).toBe('partial')
+    expect(
+      getEntryStatus(
+        {
+          ...entries[0],
+          contributionCents: 0,
+          savingCents: 0,
+          mutualInsuranceCents: 0,
+          loanCents: 0,
+          repaymentCents: 0,
+          travelCents: 0,
+        },
+        dataset.cycle.defaults,
+        'draft',
+      ),
+    ).toBe('draft')
+  })
+
+  it('builds a member timeline with monthly saving, insurance and cumulative credit', () => {
+    const timeline = getMemberTimeline(datasetFixture(), member.id)
+
+    expect(timeline).toHaveLength(2)
+    expect(timeline[0]).toMatchObject({
+      savingCents: 20_00,
+      mutualInsuranceCents: 5_00,
+      creditBalanceCents: 140_00,
+    })
+    expect(timeline[1]).toMatchObject({
+      savingCents: 20_00,
+      mutualInsuranceCents: 5_00,
+      creditBalanceCents: 65_00,
+    })
+  })
+
+  it('builds period detail rows with totals equal to entries', () => {
+    const detail = getPeriodDetail(datasetFixture(), 'period-1')
+
+    expect(detail?.rows).toHaveLength(1)
+    expect(detail?.rows[0]).toMatchObject({
+      contributionStatus: 'complete',
+      savingCents: 20_00,
+      mutualInsuranceCents: 5_00,
+      creditBalanceCents: 140_00,
+    })
+  })
+
+  it('builds contribution matrix totals for contribution, monthly saving and insurance', () => {
+    const matrix = getContributionMatrix(datasetFixture())
+
+    expect(matrix[0]).toMatchObject({
+      contributionTotalCents: 200_00,
+      savingTotalCents: 40_00,
+      mutualInsuranceTotalCents: 10_00,
+    })
+  })
+
+  it('tracks monthly saving and mutual insurance as collective funds', () => {
+    const rows = getCollectiveFundRows(datasetFixture())
+    const summary = getCollectiveFundSummary(datasetFixture())
+
+    expect(rows[0]).toMatchObject({
+      expectedSavingCents: 20_00,
+      paidSavingCents: 20_00,
+      savingGapCents: 0,
+      expectedMutualInsuranceCents: 5_00,
+      paidMutualInsuranceCents: 5_00,
+      mutualInsuranceGapCents: 0,
+      status: 'complete',
+      priority: 0,
+    })
+    expect(summary).toMatchObject({
+      expectedSavingCents: 20_00,
+      paidSavingCents: 20_00,
+      expectedMutualInsuranceCents: 5_00,
+      paidMutualInsuranceCents: 5_00,
+      periodsWithAttention: 0,
+      draftPeriods: 1,
+    })
+  })
+
+  it('prioritizes closed collective fund gaps for triage', () => {
+    const dataset = datasetFixture({
+      monthlyEntries: [{ ...entries[0], savingCents: 0 }],
+    })
+
+    expect(getCollectiveFundRows(dataset)[0]).toMatchObject({
+      savingStatus: 'missing',
+      mutualInsuranceStatus: 'complete',
+      status: 'missing',
+      priority: 3,
     })
   })
 })
