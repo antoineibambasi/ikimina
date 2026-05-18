@@ -8,7 +8,7 @@ Le classeur Excel source est traite comme archive en lecture seule. Le script d'
 
 - React + TypeScript + Vite
 - Supabase Postgres/Auth avec magic links
-- Cloudflare Pages
+- GitHub Pages ou Cloudflare Pages
 - Vitest + Playwright
 - Import Excel via `exceljs`
 - Exports PDF/Excel via `jspdf` et `exceljs`
@@ -63,6 +63,23 @@ Configuration recommandee:
 
 Le fichier `public/_redirects` active le routage SPA.
 
+## GitHub Pages
+
+GitHub Pages est suffisant pour l'hebergement gratuit tant que l'application reste statique et que les donnees viennent de `src/data/ikimina-import.json`.
+
+1. Creer un depot GitHub nomme `ikimina`.
+2. Pousser la branche `main`.
+3. Dans GitHub: `Settings` > `Pages` > `Build and deployment` > `Source` = `GitHub Actions`.
+4. Le workflow `.github/workflows/pages.yml` publie automatiquement `dist`.
+
+URL attendue sans nom de domaine:
+
+```text
+https://antoineibambasi.github.io/ikimina/
+```
+
+Si le depot GitHub porte un autre nom, modifier `VITE_BASE_PATH` dans `.github/workflows/pages.yml`.
+
 ## Donnees importees
 
 Le rapport d'import est genere ici:
@@ -86,6 +103,8 @@ Les formules `#REF!` sont journalisees mais non recopiees.
 - `Mois 360`: controle d'un mois, statuts par membre, totaux et ecarts collectifs.
 - `Cotisations`: matrice de controle avec filtres par membre, mois, statut et tri par priorite.
 - `Fonds collectifs`: pilotage collectif de l'epargne mensuelle et de l'assurance mutuelle, avec attendu, encaisse, ecart et triage.
+- `Rotation tontine`: calendrier des beneficiaires et explication de l'exemption de cotisation.
+- `Import & preuves`: loader local pour preparer le tri des PDF, images, CSV et preuves de transfert avant validation.
 
 ## Regles metier
 

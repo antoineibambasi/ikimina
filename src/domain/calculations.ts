@@ -1,4 +1,4 @@
-import type {
+﻿import type {
   CollectiveFundPeriodRow,
   CollectiveFundSummary,
   ContributionMatrixRow,
@@ -12,6 +12,7 @@ import type {
   Period,
   PeriodDetail,
   PeriodMemberDetail,
+  RotationEntry,
 } from './types'
 import { sumCents } from './money'
 
@@ -411,4 +412,71 @@ export function upsertMonthlyEntry(
   }
 
   return entries.map((entry) => (entry.id === nextEntry.id ? nextEntry : entry))
+}
+
+export function getTontineRotation(dataset: IkiminaDataset): RotationEntry[] {
+  const activeMembersCount = dataset.members.filter((m) => m.status === 'active').length
+  const cagnotteAmountCents =
+    Math.max(0, activeMembersCount - 1) * dataset.cycle.defaults.contributionCents
+
+  const sortedPeriods = sortPeriods(dataset.periods)
+  const sortedMembers = sortMembers(dataset.members)
+  const currentPeriod = getCurrentPeriod(dataset.periods)
+
+  const rotation: RotationEntry[] = []
+  const beneficiariesFound = new Set<string>()
+
+  for (const period of sortedPeriods) {
+    const periodEntries = getPeriodEntries(dataset.monthlyEntries, period.id)
+
+    const hasPayments = periodEntries.some((e) => e.contributionCents > 0)
+
+    let beneficiaryId: string | undefined = undefined
+    const isPredicted = false
+
+    if (hasPayments) {
+      const zeroes = periodEntries.filter((e) => e.contributionCents === 0)
+      if (zeroes.length === 1) {
+        beneficiaryId = zeroes[0].memberId
+      }
+    }
+
+    if (beneficiaryId) {
+      beneficiariesFound.add(beneficiaryId)
+      const member = dataset.members.find((m) => m.id === beneficiaryId)
+      if (member) {
+        rotation.push({
+          period,
+          member,
+          status:
+            period.id === currentPeriod.id
+              ? 'current'
+              : period.status === 'closed'
+                ? 'past'
+                : 'future',
+          isPredicted,
+          cagnotteAmountCents,
+        })
+      }
+    }
+  }
+
+  const remainingMembers = sortedMembers.filter((m) => !beneficiariesFound.has(m.id))
+
+  for (const period of sortedPeriods) {
+    if (!rotation.some((r) => r.period.id === period.id)) {
+      const nextMember = remainingMembers.shift()
+      if (nextMember) {
+        rotation.push({
+          period,
+          member: nextMember,
+          status: period.id === currentPeriod.id ? 'current' : 'future',
+          isPredicted: true,
+          cagnotteAmountCents,
+        })
+      }
+    }
+  }
+
+  return rotation.sort((a, b) => a.period.month.localeCompare(b.period.month))
 }

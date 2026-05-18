@@ -9,6 +9,7 @@ import {
   getEntryStatus,
   getMemberTimeline,
   getPeriodDetail,
+  getTontineRotation,
 } from './calculations'
 import type { IkiminaDataset, Member, MonthlyEntry, OpeningBalance, Period } from './types'
 
@@ -243,6 +244,40 @@ describe('IKIMINA financial calculations', () => {
       mutualInsuranceStatus: 'complete',
       status: 'missing',
       priority: 3,
+    })
+  })
+
+  it('deduces and predicts tontine rotation beneficiaries', () => {
+    const secondMember: Member = {
+      id: 'member-2',
+      name: 'DEUXIEME MEMBRE',
+      successionOrder: 2,
+      status: 'active',
+    }
+    const dataset = datasetFixture({
+      members: [member, secondMember],
+      monthlyEntries: [
+        { ...entries[0], contributionCents: 0 },
+        {
+          ...entries[0],
+          id: 'entry-member-2-period-1',
+          memberId: secondMember.id,
+          contributionCents: 100_00,
+        },
+      ],
+    })
+
+    const rotation = getTontineRotation(dataset)
+
+    expect(rotation).toHaveLength(2)
+    expect(rotation[0]).toMatchObject({
+      member,
+      isPredicted: false,
+      cagnotteAmountCents: 100_00,
+    })
+    expect(rotation[1]).toMatchObject({
+      member: secondMember,
+      isPredicted: true,
     })
   })
 })

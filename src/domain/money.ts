@@ -31,6 +31,10 @@ export function formatMoney(cents: MoneyCents): string {
   return eurFormatter.format(fromCents(cents))
 }
 
+export function formatPdfMoney(cents: MoneyCents): string {
+  return formatMoney(cents).replace(/[\u00a0\u202f]/g, ' ')
+}
+
 export function parseMoneyInput(value: string): MoneyCents {
   return toCents(value)
 }

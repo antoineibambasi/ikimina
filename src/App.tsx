@@ -6,8 +6,10 @@ import {
   CalendarDays,
   CheckCircle2,
   ClipboardList,
+  Database,
   Download,
   FileSpreadsheet,
+  FileQuestion,
   Gauge,
   Landmark,
   Layers,
@@ -18,6 +20,7 @@ import {
   Search,
   Settings,
   ShieldCheck,
+  Upload,
   UserRound,
   Users,
 } from 'lucide-react'
@@ -34,11 +37,13 @@ import {
   getMemberTimeline,
   getPeriodDetail,
   getPeriodEntries,
+  getTontineRotation,
   sortMembers,
   sortPeriods,
   upsertMonthlyEntry,
 } from './domain/calculations'
 import { formatInputMoney, formatMoney, parseMoneyInput } from './domain/money'
+import { buildProofCandidate, summarizeProofCandidates } from './domain/proofLoader'
 import type {
   AuditEvent,
   CollectiveFundPeriodRow,
@@ -47,6 +52,7 @@ import type {
   Member,
   MonthlyEntry,
   Period,
+  ProofCandidate,
 } from './domain/types'
 import { isSupabaseConfigured, supabase } from './lib/supabase'
 
@@ -59,6 +65,8 @@ type ViewKey =
   | 'collective'
   | 'reports'
   | 'exploration'
+  | 'rotation'
+  | 'imports'
   | 'settings'
 
 type AppRoute =
@@ -80,6 +88,8 @@ const viewItems: Array<{
   { key: 'collective', label: 'Fonds collectifs', icon: Layers },
   { key: 'reports', label: 'Rapports', icon: BarChart3 },
   { key: 'exploration', label: 'Exploration', icon: Search },
+  { key: 'rotation', label: 'Rotation tontine', icon: RefreshCcw },
+  { key: 'imports', label: 'Import & preuves', icon: Upload },
   { key: 'settings', label: 'Parametres', icon: Settings },
 ]
 
@@ -626,6 +636,14 @@ function App() {
           <SettingsView dataset={dataset} dashboardTotals={dashboardTotals} />
         )}
 
+        {route.kind === 'view' && route.view === 'rotation' && (
+          <RotationView dataset={dataset} />
+        )}
+
+        {route.kind === 'view' && route.view === 'imports' && (
+          <ProofImportView dataset={dataset} />
+        )}
+
         {route.kind === 'member' && (
           <Member360View
             dataset={dataset}
@@ -681,6 +699,16 @@ function DashboardView({
           value={formatMoney(dashboardTotals.creditBalanceCents)}
           tone="amber"
           href="#/credits"
+        />
+        <StatTile
+          label="Rotation tontine"
+          value="Calendrier"
+          href="#/rotation"
+        />
+        <StatTile
+          label="Import justificatifs"
+          value="Triage"
+          href="#/imports"
         />
       </div>
 
@@ -1283,6 +1311,16 @@ function ExplorationView({
           <strong>Fonds collectifs</strong>
           <span>Pilotage collectif de l'epargne et de l'assurance.</span>
         </a>
+        <a className="exploration-tile" href="#/rotation">
+          <RefreshCcw size={20} />
+          <strong>Rotation tontine</strong>
+          <span>Calendrier des beneficiaires exemptes.</span>
+        </a>
+        <a className="exploration-tile" href="#/imports">
+          <Upload size={20} />
+          <strong>Import & preuves</strong>
+          <span>Preparer le tri des extraits, factures et preuves de transfert.</span>
+        </a>
       </div>
 
       <section className="panel">
@@ -1808,6 +1846,251 @@ function SettingsView({
           </p>
           <p>Formules #REF! ignorees: {dataset.importReport.ignoredFormulaErrors}</p>
           <p>Avertissements: {dataset.importReport.warnings.length}</p>
+        </div>
+      </section>
+    </section>
+  )
+}
+
+function RotationView({ dataset }: { dataset: IkiminaDataset }) {
+  const rotation = useMemo(() => getTontineRotation(dataset), [dataset])
+
+  return (
+    <section className="view-stack">
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <h2>Calendrier de Rotation</h2>
+            <p>
+              Pourquoi certains ont-ils paye moins ? Le beneficiaire du mois est exempte de sa cotisation de 100€.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div className="cards-grid">
+        {rotation.map((entry) => (
+          <div key={entry.period.id} className={`rotation-card ${entry.status}`}>
+            <div className="rotation-card-header">
+              <h3>{entry.period.label}</h3>
+              <span className={`rotation-status ${entry.status}`}>
+                {entry.status === 'past' ? 'Cloture' : entry.status === 'current' ? 'Mois en cours' : 'A venir'}
+              </span>
+            </div>
+            <div className="rotation-card-body">
+              <div className="rotation-beneficiary">
+                <MemberLink member={entry.member} />
+              </div>
+              <div className="rotation-details">
+                <p>Ordre de succession : {entry.member.successionOrder}</p>
+                <p>Exempte de cotisation (0€)</p>
+                {entry.isPredicted && <span className="predicted-badge">Prediction automatique</span>}
+              </div>
+            </div>
+            <div className="rotation-card-footer">
+              <span>Cagnotte estimee</span>
+              <span className="rotation-cagnotte">{formatMoney(entry.cagnotteAmountCents)}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+const proofPurposeLabels: Record<ProofCandidate['purpose'], string> = {
+  cotisation: 'Cotisation',
+  epargne: 'Epargne',
+  assurance: 'Assurance',
+  cotisation_epargne_assurance: 'Cotisation + epargne + assurance',
+  unknown: 'A qualifier',
+}
+
+const proofStatusLabels: Record<ProofCandidate['status'], string> = {
+  ready: 'Pret',
+  needs_review: 'A verifier',
+  unsupported: 'Non supporte',
+}
+
+function formatFileSize(sizeBytes: number): string {
+  if (sizeBytes < 1024) {
+    return `${sizeBytes} o`
+  }
+
+  if (sizeBytes < 1024 * 1024) {
+    return `${(sizeBytes / 1024).toFixed(1).replace('.', ',')} Ko`
+  }
+
+  return `${(sizeBytes / (1024 * 1024)).toFixed(1).replace('.', ',')} Mo`
+}
+
+function downloadProofCandidates(candidates: ProofCandidate[]) {
+  const exportRows = candidates.map((candidate) => ({
+    fileName: candidate.fileName,
+    fileType: candidate.fileType,
+    memberId: candidate.member?.id ?? null,
+    memberName: candidate.member?.name ?? null,
+    periodId: candidate.period?.id ?? null,
+    periodLabel: candidate.period?.label ?? null,
+    amountCents: candidate.amountCents ?? null,
+    purpose: candidate.purpose,
+    confidence: candidate.confidence,
+    status: candidate.status,
+    reasons: candidate.reasons,
+  }))
+  const blob = new Blob([JSON.stringify(exportRows, null, 2)], {
+    type: 'application/json;charset=utf-8',
+  })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = 'ikimina-preuves-triage.json'
+  link.click()
+  URL.revokeObjectURL(url)
+}
+
+function ProofImportView({ dataset }: { dataset: IkiminaDataset }) {
+  const [candidates, setCandidates] = useState<ProofCandidate[]>([])
+  const summary = useMemo(() => summarizeProofCandidates(candidates), [candidates])
+
+  async function loadFiles(files: FileList | null) {
+    if (!files?.length) {
+      return
+    }
+
+    const nextCandidates = await Promise.all(
+      Array.from(files).map(async (file) => {
+        const isTextLike =
+          file.type.startsWith('text/') ||
+          file.type === 'application/json' ||
+          file.name.toLowerCase().endsWith('.csv')
+        const text = isTextLike ? await file.text() : undefined
+
+        return buildProofCandidate(dataset, {
+          fileName: file.name,
+          fileType: file.type,
+          sizeBytes: file.size,
+          text,
+        })
+      }),
+    )
+
+    setCandidates((current) => [...nextCandidates, ...current])
+  }
+
+  return (
+    <section className="view-stack">
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <h2>Loader de justificatifs</h2>
+            <p>
+              Depot local pour preparer l'import: l'app tente d'attribuer membre, mois, montant et
+              categorie avant validation.
+            </p>
+          </div>
+          <div className="button-row">
+            <button onClick={() => downloadProofCandidates(candidates)} disabled={!candidates.length}>
+              <Download size={16} />
+              JSON triage
+            </button>
+            <button onClick={() => setCandidates([])} disabled={!candidates.length}>
+              <RefreshCcw size={16} />
+              Vider
+            </button>
+          </div>
+        </div>
+
+        <label className="proof-dropzone">
+          <Upload size={22} />
+          <strong>Deposer des preuves</strong>
+          <span>PDF, images, CSV, TXT ou JSON. Les PDF/images sont analyses par nom en v1.</span>
+          <input
+            type="file"
+            multiple
+            accept=".pdf,image/*,.csv,.txt,.json"
+            onChange={(event) => loadFiles(event.target.files)}
+          />
+        </label>
+      </section>
+
+      <div className="stats-grid wide-summary">
+        <StatTile label="Documents" value={String(summary.total)} />
+        <StatTile label="Prets" value={String(summary.ready)} tone="green" />
+        <StatTile label="A verifier" value={String(summary.needsReview)} tone="amber" />
+        <StatTile label="Non supportes" value={String(summary.unsupported)} tone="red" />
+      </div>
+
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <h2>Triage des preuves</h2>
+            <p>Base de travail avant persistance Supabase et OCR serveur.</p>
+          </div>
+        </div>
+        {candidates.length === 0 ? (
+          <div className="empty-state">
+            <FileQuestion size={22} />
+            <p>Aucun document charge. Le loader est pret pour tester des fichiers locaux.</p>
+          </div>
+        ) : (
+          <div className="data-table-wrap">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Fichier</th>
+                  <th>Statut</th>
+                  <th>Membre suggere</th>
+                  <th>Mois suggere</th>
+                  <th>Montant</th>
+                  <th>Categorie</th>
+                  <th>Confiance</th>
+                  <th>Questions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {candidates.map((candidate) => (
+                  <tr key={candidate.id}>
+                    <td>
+                      <strong>{candidate.fileName}</strong>
+                      <small className="muted-cell">
+                        {candidate.fileType || 'type inconnu'} - {formatFileSize(candidate.sizeBytes)}
+                      </small>
+                    </td>
+                    <td>
+                      <span className={`proof-status ${candidate.status}`}>
+                        {proofStatusLabels[candidate.status]}
+                      </span>
+                    </td>
+                    <td>
+                      {candidate.member ? <MemberLink member={candidate.member} /> : 'A choisir'}
+                    </td>
+                    <td>{candidate.period ? <PeriodLink period={candidate.period} /> : 'A choisir'}</td>
+                    <td>
+                      {candidate.amountCents === undefined
+                        ? 'A saisir'
+                        : formatMoney(candidate.amountCents)}
+                    </td>
+                    <td>{proofPurposeLabels[candidate.purpose]}</td>
+                    <td>{candidate.confidence}%</td>
+                    <td>{candidate.reasons.length ? candidate.reasons.join(' ') : 'OK'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <h2>Prochaine etape technique</h2>
+            <p>
+              En production, ces candidats iront dans Supabase Storage + table de validation, puis
+              l'admin confirmera avant d'ecrire dans les entrees mensuelles.
+            </p>
+          </div>
+          <Database size={20} />
         </div>
       </section>
     </section>

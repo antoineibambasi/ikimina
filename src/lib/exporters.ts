@@ -7,7 +7,7 @@ import {
   getPeriodEntries,
   sortMembers,
 } from '../domain/calculations'
-import { formatMoney, fromCents } from '../domain/money'
+import { formatPdfMoney, fromCents } from '../domain/money'
 import type { IkiminaDataset, MonthlyEntry, Period } from '../domain/types'
 
 function downloadBlob(blob: Blob, fileName: string) {
@@ -123,24 +123,24 @@ export function exportPeriodToPdf(dataset: IkiminaDataset, period: Period) {
       return [
         String(member.successionOrder),
         member.name,
-        formatMoney(entry?.contributionCents ?? 0),
-        formatMoney(entry?.savingCents ?? 0),
-        formatMoney(entry?.mutualInsuranceCents ?? 0),
-        formatMoney(entry?.loanCents ?? 0),
-        formatMoney(entry?.repaymentCents ?? 0),
-        formatMoney(entry?.travelCents ?? 0),
+        formatPdfMoney(entry?.contributionCents ?? 0),
+        formatPdfMoney(entry?.savingCents ?? 0),
+        formatPdfMoney(entry?.mutualInsuranceCents ?? 0),
+        formatPdfMoney(entry?.loanCents ?? 0),
+        formatPdfMoney(entry?.repaymentCents ?? 0),
+        formatPdfMoney(entry?.travelCents ?? 0),
       ]
     }),
     foot: [
       [
         '',
         'TOTAL',
-        formatMoney(totals.contributionCents),
-        formatMoney(totals.savingCents),
-        formatMoney(totals.mutualInsuranceCents),
-        formatMoney(totals.loanCents),
-        formatMoney(totals.repaymentCents),
-        formatMoney(totals.travelCents),
+        formatPdfMoney(totals.contributionCents),
+        formatPdfMoney(totals.savingCents),
+        formatPdfMoney(totals.mutualInsuranceCents),
+        formatPdfMoney(totals.loanCents),
+        formatPdfMoney(totals.repaymentCents),
+        formatPdfMoney(totals.travelCents),
       ],
     ],
     styles: { fontSize: 8 },
@@ -157,8 +157,8 @@ export function exportPeriodToPdf(dataset: IkiminaDataset, period: Period) {
     body: ledgers.map((ledger) => [
       String(ledger.member.successionOrder),
       ledger.member.name,
-      formatMoney(ledger.creditBalanceCents),
-      formatMoney(ledger.travelBalanceCents),
+      formatPdfMoney(ledger.creditBalanceCents),
+      formatPdfMoney(ledger.travelBalanceCents),
     ]),
     styles: { fontSize: 8 },
     headStyles: { fillColor: [31, 41, 55] },

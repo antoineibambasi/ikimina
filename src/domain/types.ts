@@ -6,6 +6,15 @@ export type AppRole = 'admin' | 'participant'
 
 export type ContributionStatus = 'complete' | 'partial' | 'missing' | 'draft'
 
+export type ProofCandidateStatus = 'ready' | 'needs_review' | 'unsupported'
+
+export type ProofCandidatePurpose =
+  | 'cotisation'
+  | 'epargne'
+  | 'assurance'
+  | 'cotisation_epargne_assurance'
+  | 'unknown'
+
 export type MoneyCents = number
 
 export interface CycleDefaults {
@@ -200,4 +209,40 @@ export interface CollectiveFundSummary {
   mutualInsuranceGapCents: MoneyCents
   periodsWithAttention: number
   draftPeriods: number
+}
+
+export interface RotationEntry {
+  period: Period
+  member: Member
+  status: 'past' | 'current' | 'future'
+  isPredicted: boolean
+  cagnotteAmountCents: MoneyCents
+}
+
+export interface ProofDocumentInput {
+  fileName: string
+  fileType?: string
+  sizeBytes?: number
+  text?: string
+}
+
+export interface ProofCandidate {
+  id: string
+  fileName: string
+  fileType: string
+  sizeBytes: number
+  member?: Member
+  period?: Period
+  amountCents?: MoneyCents
+  purpose: ProofCandidatePurpose
+  confidence: number
+  status: ProofCandidateStatus
+  reasons: string[]
+}
+
+export interface ProofTriageSummary {
+  total: number
+  ready: number
+  needsReview: number
+  unsupported: number
 }

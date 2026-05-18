@@ -54,6 +54,30 @@ test('collective funds view exposes Salesforce-like triage', async ({ page }) =>
   await expect(page.getByRole('link', { name: 'AVRIL 2026' })).toBeVisible()
 })
 
+test('rotation calendar explains beneficiary exemptions', async ({ page }) => {
+  await page.goto('/#/rotation')
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Rotation tontine' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Calendrier de Rotation' })).toBeVisible()
+  await expect(page.getByText('NTACYOBITWAYE FRANCOISE')).toBeVisible()
+  await expect(page.getByText('Prediction automatique').first()).toBeVisible()
+})
+
+test('proof loader triages local transfer evidence', async ({ page }) => {
+  await page.goto('/#/imports')
+
+  await expect(page.getByRole('heading', { level: 1, name: 'Import & preuves' })).toBeVisible()
+  await page.locator('input[type="file"]').setInputFiles({
+    name: 'preuve-IBAMBASI-ANTOINE-janvier-2026-125-eur.pdf',
+    mimeType: 'application/pdf',
+    buffer: Buffer.from(''),
+  })
+
+  await expect(page.getByRole('cell', { name: /IBAMBASI ANTOINE/ })).toBeVisible()
+  await expect(page.getByRole('cell', { name: /JANVIER 2026/ })).toBeVisible()
+  await expect(page.getByText('Cotisation + epargne + assurance')).toBeVisible()
+})
+
 test('browser back returns to the same month detail', async ({ page }) => {
   await page.goto('/#/mois/period-2026-04')
 
