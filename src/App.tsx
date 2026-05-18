@@ -815,12 +815,12 @@ function EncodingView({
               const entry = periodEntry(dataset, selectedPeriod.id, member.id)
               return (
                 <tr key={member.id}>
-                  <td>{member.successionOrder}</td>
-                  <td className="member-cell">
+                  <td data-label="Ordre">{member.successionOrder}</td>
+                  <td className="member-cell" data-label="Nom">
                     <MemberLink member={member} />
                   </td>
                   {moneyFields.map((field) => (
-                    <td key={field.key}>
+                    <td key={field.key} data-label={field.label}>
                       <input
                         aria-label={`${field.label} ${member.name}`}
                         disabled={selectedPeriod.status === 'closed'}
@@ -882,16 +882,16 @@ function MembersView({
           <tbody>
             {ledgers.map((ledger) => (
               <tr key={ledger.member.id}>
-                <td>{ledger.member.successionOrder}</td>
-                <td className="member-cell">
+                <td data-label="Ordre">{ledger.member.successionOrder}</td>
+                <td className="member-cell" data-label="Nom">
                   <MemberLink member={ledger.member} />
                 </td>
-                <td>{ledger.member.status === 'active' ? 'Actif' : 'Inactif'}</td>
-                <td>{formatMoney(ledger.contributionCents)}</td>
-                <td>{formatMoney(ledger.savingCents)}</td>
-                <td>{formatMoney(ledger.mutualInsuranceCents)}</td>
-                <td>{formatMoney(ledger.creditBalanceCents)}</td>
-                <td>{formatMoney(ledger.travelBalanceCents)}</td>
+                <td data-label="Statut">{ledger.member.status === 'active' ? 'Actif' : 'Inactif'}</td>
+                <td data-label="Cotisations">{formatMoney(ledger.contributionCents)}</td>
+                <td data-label="Epargne payee">{formatMoney(ledger.savingCents)}</td>
+                <td data-label="Assurance payee">{formatMoney(ledger.mutualInsuranceCents)}</td>
+                <td data-label="Encours credit">{formatMoney(ledger.creditBalanceCents)}</td>
+                <td data-label="Epargne voyage">{formatMoney(ledger.travelBalanceCents)}</td>
               </tr>
             ))}
           </tbody>
@@ -925,14 +925,14 @@ function CreditsView({ ledgers }: { ledgers: ReturnType<typeof calculateAllLedge
           <tbody>
             {ledgers.map((ledger) => (
               <tr key={ledger.member.id}>
-                <td>{ledger.member.successionOrder}</td>
-                <td className="member-cell">
+                <td data-label="Ordre">{ledger.member.successionOrder}</td>
+                <td className="member-cell" data-label="Nom">
                   <MemberLink member={ledger.member} />
                 </td>
-                <td>{formatMoney(ledger.openingCreditCents)}</td>
-                <td>{formatMoney(ledger.loanCents)}</td>
-                <td>{formatMoney(ledger.repaymentCents)}</td>
-                <td className={ledger.creditBalanceCents > 0 ? 'amount-alert' : ''}>
+                <td data-label="Solde initial">{formatMoney(ledger.openingCreditCents)}</td>
+                <td data-label="Prets">{formatMoney(ledger.loanCents)}</td>
+                <td data-label="Remboursements">{formatMoney(ledger.repaymentCents)}</td>
+                <td data-label="Encours" className={ledger.creditBalanceCents > 0 ? 'amount-alert' : ''}>
                   <a className="text-link" href={memberHash(ledger.member.id)}>
                     {formatMoney(ledger.creditBalanceCents)}
                   </a>
@@ -969,13 +969,13 @@ function TravelView({ ledgers }: { ledgers: ReturnType<typeof calculateAllLedger
           <tbody>
             {ledgers.map((ledger) => (
               <tr key={ledger.member.id}>
-                <td>{ledger.member.successionOrder}</td>
-                <td className="member-cell">
+                <td data-label="Ordre">{ledger.member.successionOrder}</td>
+                <td className="member-cell" data-label="Nom">
                   <MemberLink member={ledger.member} />
                 </td>
-                <td>{formatMoney(ledger.openingTravelSavingCents)}</td>
-                <td>{formatMoney(ledger.travelMovementCents)}</td>
-                <td>
+                <td data-label="Solde initial">{formatMoney(ledger.openingTravelSavingCents)}</td>
+                <td data-label="Mouvements">{formatMoney(ledger.travelMovementCents)}</td>
+                <td data-label="Solde">
                   <a className="text-link" href={memberHash(ledger.member.id)}>
                     {formatMoney(ledger.travelBalanceCents)}
                   </a>
@@ -1161,26 +1161,26 @@ function CollectiveFundsView({ dataset }: { dataset: IkiminaDataset }) {
             <tbody>
               {visibleRows.map((row) => (
                 <tr key={row.period.id}>
-                  <td className="member-cell">
+                  <td className="member-cell" data-label="Mois">
                     <PeriodLink period={row.period} />
                   </td>
-                  <td>
+                  <td data-label="Statut">
                     <ContributionStatusBadge status={row.status} />
                   </td>
-                  <td>
+                  <td data-label="Priorite">
                     <span className={`priority-pill priority-${row.priority}`}>
                       {priorityLabel(row.priority)}
                     </span>
                   </td>
-                  <td>{row.activeMembers}</td>
-                  <td>{formatMoney(row.expectedSavingCents)}</td>
-                  <td>{formatMoney(row.paidSavingCents)}</td>
-                  <td className={row.savingGapCents !== 0 ? 'amount-alert' : ''}>
+                  <td data-label="Membres actifs">{row.activeMembers}</td>
+                  <td data-label="Epargne attendue">{formatMoney(row.expectedSavingCents)}</td>
+                  <td data-label="Epargne encaissee">{formatMoney(row.paidSavingCents)}</td>
+                  <td data-label="Ecart epargne" className={row.savingGapCents !== 0 ? 'amount-alert' : ''}>
                     {formatMoney(row.savingGapCents)}
                   </td>
-                  <td>{formatMoney(row.expectedMutualInsuranceCents)}</td>
-                  <td>{formatMoney(row.paidMutualInsuranceCents)}</td>
-                  <td className={row.mutualInsuranceGapCents !== 0 ? 'amount-alert' : ''}>
+                  <td data-label="Assurance attendue">{formatMoney(row.expectedMutualInsuranceCents)}</td>
+                  <td data-label="Assurance encaissee">{formatMoney(row.paidMutualInsuranceCents)}</td>
+                  <td data-label="Ecart assurance" className={row.mutualInsuranceGapCents !== 0 ? 'amount-alert' : ''}>
                     {formatMoney(row.mutualInsuranceGapCents)}
                   </td>
                 </tr>
@@ -1263,10 +1263,10 @@ function ReportsView({
             <tbody>
               {dataset.auditEvents.slice(0, 12).map((event) => (
                 <tr key={event.id}>
-                  <td>{new Date(event.createdAt).toLocaleString('fr-BE')}</td>
-                  <td>{event.actor}</td>
-                  <td>{event.action}</td>
-                  <td>
+                  <td data-label="Date">{new Date(event.createdAt).toLocaleString('fr-BE')}</td>
+                  <td data-label="Acteur">{event.actor}</td>
+                  <td data-label="Action">{event.action}</td>
+                  <td data-label="Objet">
                     {event.entityType} / {event.entityId}
                   </td>
                 </tr>
@@ -1346,15 +1346,15 @@ function ExplorationView({
             <tbody>
               {ledgers.map((ledger) => (
                 <tr key={ledger.member.id}>
-                  <td>{ledger.member.successionOrder}</td>
-                  <td className="member-cell">
+                  <td data-label="Ordre">{ledger.member.successionOrder}</td>
+                  <td className="member-cell" data-label="Nom">
                     <MemberLink member={ledger.member} />
                   </td>
-                  <td>{formatMoney(ledger.contributionCents)}</td>
-                  <td>{formatMoney(ledger.savingCents)}</td>
-                  <td>{formatMoney(ledger.mutualInsuranceCents)}</td>
-                  <td>{formatMoney(ledger.creditBalanceCents)}</td>
-                  <td>{formatMoney(ledger.travelBalanceCents)}</td>
+                  <td data-label="Cotisations">{formatMoney(ledger.contributionCents)}</td>
+                  <td data-label="Epargne payee">{formatMoney(ledger.savingCents)}</td>
+                  <td data-label="Assurance payee">{formatMoney(ledger.mutualInsuranceCents)}</td>
+                  <td data-label="Credit">{formatMoney(ledger.creditBalanceCents)}</td>
+                  <td data-label="Voyage">{formatMoney(ledger.travelBalanceCents)}</td>
                 </tr>
               ))}
             </tbody>
@@ -1389,15 +1389,15 @@ function ExplorationView({
                 )
                 return (
                   <tr key={period.id}>
-                    <td className="member-cell">
+                    <td className="member-cell" data-label="Mois">
                       <PeriodLink period={period} />
                     </td>
-                    <td>{statusLabel(period.status)}</td>
-                    <td>{formatMoney(totals.contributionCents)}</td>
-                    <td>{formatMoney(totals.savingCents)}</td>
-                    <td>{formatMoney(totals.mutualInsuranceCents)}</td>
-                    <td>{formatMoney(totals.loanCents)}</td>
-                    <td>{formatMoney(totals.repaymentCents)}</td>
+                    <td data-label="Statut">{statusLabel(period.status)}</td>
+                    <td data-label="Cotisations">{formatMoney(totals.contributionCents)}</td>
+                    <td data-label="Fonds epargne">{formatMoney(totals.savingCents)}</td>
+                    <td data-label="Fonds assurance">{formatMoney(totals.mutualInsuranceCents)}</td>
+                    <td data-label="Prets">{formatMoney(totals.loanCents)}</td>
+                    <td data-label="Remboursements">{formatMoney(totals.repaymentCents)}</td>
                   </tr>
                 )
               })}
@@ -1482,20 +1482,20 @@ function Member360View({
             <tbody>
               {timeline.map((row) => (
                 <tr key={row.period.id}>
-                  <td className="member-cell">
+                  <td className="member-cell" data-label="Mois">
                     <PeriodLink period={row.period} />
                   </td>
-                  <td>
+                  <td data-label="Statut">
                     <ContributionStatusBadge status={row.contributionStatus} />
                   </td>
-                  <td>{formatMoney(row.contributionCents)}</td>
-                  <td>{formatMoney(row.savingCents)}</td>
-                  <td>{formatMoney(row.mutualInsuranceCents)}</td>
-                  <td>{formatMoney(row.loanCents)}</td>
-                  <td>{formatMoney(row.repaymentCents)}</td>
-                  <td>{formatMoney(row.travelCents)}</td>
-                  <td>{formatMoney(row.creditBalanceCents)}</td>
-                  <td>{formatMoney(row.travelBalanceCents)}</td>
+                  <td data-label="Cotisation">{formatMoney(row.contributionCents)}</td>
+                  <td data-label="Epargne payee">{formatMoney(row.savingCents)}</td>
+                  <td data-label="Assurance payee">{formatMoney(row.mutualInsuranceCents)}</td>
+                  <td data-label="Pret">{formatMoney(row.loanCents)}</td>
+                  <td data-label="Remboursement">{formatMoney(row.repaymentCents)}</td>
+                  <td data-label="Voyage">{formatMoney(row.travelCents)}</td>
+                  <td data-label="Solde credit">{formatMoney(row.creditBalanceCents)}</td>
+                  <td data-label="Solde voyage">{formatMoney(row.travelBalanceCents)}</td>
                 </tr>
               ))}
             </tbody>
@@ -1614,19 +1614,19 @@ function Period360View({ dataset, periodId }: { dataset: IkiminaDataset; periodI
             <tbody>
               {detail.rows.map((row) => (
                 <tr key={row.member.id}>
-                  <td>{row.member.successionOrder}</td>
-                  <td className="member-cell">
+                  <td data-label="Ordre">{row.member.successionOrder}</td>
+                  <td className="member-cell" data-label="Membre">
                     <MemberLink member={row.member} />
                   </td>
-                  <td>
+                  <td data-label="Statut">
                     <ContributionStatusBadge status={row.contributionStatus} />
                   </td>
-                  <td>{formatMoney(row.contributionCents)}</td>
-                  <td>{formatMoney(row.savingCents)}</td>
-                  <td>{formatMoney(row.mutualInsuranceCents)}</td>
-                  <td>{formatMoney(row.loanCents)}</td>
-                  <td>{formatMoney(row.repaymentCents)}</td>
-                  <td>{formatMoney(row.creditBalanceCents)}</td>
+                  <td data-label="Cotisation">{formatMoney(row.contributionCents)}</td>
+                  <td data-label="Epargne payee">{formatMoney(row.savingCents)}</td>
+                  <td data-label="Assurance payee">{formatMoney(row.mutualInsuranceCents)}</td>
+                  <td data-label="Pret">{formatMoney(row.loanCents)}</td>
+                  <td data-label="Remboursement">{formatMoney(row.repaymentCents)}</td>
+                  <td data-label="Credit apres mois">{formatMoney(row.creditBalanceCents)}</td>
                 </tr>
               ))}
             </tbody>
@@ -2050,29 +2050,31 @@ function ProofImportView({ dataset }: { dataset: IkiminaDataset }) {
               <tbody>
                 {candidates.map((candidate) => (
                   <tr key={candidate.id}>
-                    <td>
+                    <td data-label="Fichier">
                       <strong>{candidate.fileName}</strong>
                       <small className="muted-cell">
                         {candidate.fileType || 'type inconnu'} - {formatFileSize(candidate.sizeBytes)}
                       </small>
                     </td>
-                    <td>
+                    <td data-label="Statut">
                       <span className={`proof-status ${candidate.status}`}>
                         {proofStatusLabels[candidate.status]}
                       </span>
                     </td>
-                    <td>
+                    <td data-label="Membre suggere">
                       {candidate.member ? <MemberLink member={candidate.member} /> : 'A choisir'}
                     </td>
-                    <td>{candidate.period ? <PeriodLink period={candidate.period} /> : 'A choisir'}</td>
-                    <td>
+                    <td data-label="Mois suggere">
+                      {candidate.period ? <PeriodLink period={candidate.period} /> : 'A choisir'}
+                    </td>
+                    <td data-label="Montant">
                       {candidate.amountCents === undefined
                         ? 'A saisir'
                         : formatMoney(candidate.amountCents)}
                     </td>
-                    <td>{proofPurposeLabels[candidate.purpose]}</td>
-                    <td>{candidate.confidence}%</td>
-                    <td>{candidate.reasons.length ? candidate.reasons.join(' ') : 'OK'}</td>
+                    <td data-label="Categorie">{proofPurposeLabels[candidate.purpose]}</td>
+                    <td data-label="Confiance">{candidate.confidence}%</td>
+                    <td data-label="Questions">{candidate.reasons.length ? candidate.reasons.join(' ') : 'OK'}</td>
                   </tr>
                 ))}
               </tbody>
